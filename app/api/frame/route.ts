@@ -13,7 +13,7 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
 
   return new NextResponse(`<!DOCTYPE html><html><head>
     <meta property="fc:frame" content="vNext" />
-    <meta property="fc:frame:image" content="https://hash-frame-test.vercel.app/phala-network.svg" />
+    <meta property="fc:frame:image" content="https://hash-frame-test.vercel.app/youdle.jpg" />
     <meta property="fc:frame:button:1" content="${accountAddress}" />
     <meta property="fc:frame:post_url" content="https://hash-frame-test.vercel.app/api/frame" />
   </head></html>`);

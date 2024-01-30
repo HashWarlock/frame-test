@@ -2,18 +2,18 @@ import { getFrameMetadata } from '@coinbase/onchainkit';
 import type { Metadata } from 'next';
 
 const frameMetadata = getFrameMetadata({
-  buttons: ['Next image'],
-  image: 'https://hash-frame-test.vercel.app/phala-network.svg',
+  buttons: ['https://hash-frame-test.vercel.app/spark.png'],
+  image: 'https://hash-frame-test.vercel.app/incipient.png',
   post_url: 'https://hash-frame-test.vercel.app/api/frame',
 });
 
 export const metadata: Metadata = {
   title: 'hash-frame-test.vercel.app',
-  description: 'LFG',
+  description: 'Who am I?',
   openGraph: {
     title: 'hash-frame-test.vercel.app',
-    description: 'LFG-SVG',
-    images: ['https://hash-frame-test.vercel.app/phala-network.svg'],
+    description: 'Who Am I?',
+    images: ['https://hash-frame-test.vercel.app/incipient.png'],
   },
   other: {
     ...frameMetadata,
@@ -23,7 +23,8 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <h1>$HASH Frame Test</h1>
+      <h1>Who Am I?</h1>
+      <body>i don't know.</body>
     </>
   );
 }
