@@ -1,11 +1,12 @@
 import { FrameRequest, getFrameAccountAddress } from '@coinbase/onchainkit';
 import { NextRequest, NextResponse } from 'next/server';
+import "dotenv/config";
 
 async function getResponse(req: NextRequest): Promise<NextResponse> {
   let accountAddress: string | undefined = '';
   try {
     const body: FrameRequest = await req.json();
-    accountAddress = await getFrameAccountAddress(body, { NEYNAR_API_KEY: 'NEYNAR_API_DOCS' });
+    accountAddress = await getFrameAccountAddress(body, { NEYNAR_API_KEY: process.env['NEYNAR_API_KEY'] });
   } catch (err) {
     console.error(err);
   }
