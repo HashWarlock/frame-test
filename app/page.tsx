@@ -3,17 +3,17 @@ import type { Metadata } from 'next';
 
 const frameMetadata = getFrameMetadata({
   buttons: ['Next image'],
-  image: 'https://zizzamia.xyz/park-1.png',
-  post_url: 'https://zizzamia.xyz/api/frame',
+  image: 'https://hash-frame-test.vercel.app/phala-network.svg',
+  post_url: 'https://hash-frame-test.vercel.app/api/frame',
 });
 
 export const metadata: Metadata = {
-  title: 'zizzamia.xyz',
+  title: 'hash-frame-test.vercel.app',
   description: 'LFG',
   openGraph: {
-    title: 'zizzamia.xyz',
-    description: 'LFG',
-    images: ['https://zizzamia.xyz/park-1.png'],
+    title: 'hash-frame-test.vercel.app',
+    description: 'LFG-SVG',
+    images: ['https://hash-frame-test.vercel.app/phala-network.svg'],
   },
   other: {
     ...frameMetadata,
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <h1>zizzamia.xyz</h1>
+      <h1>$HASH Frame Test</h1>
     </>
   );
 }
